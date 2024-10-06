@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <title>Nivell avançat</title>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="5-avançat.css">
+        <script src="5-avançat.js"></script> <!-- enllaça el document html amb el JavaScript -->
+    </head>
+
+    <body>
+        <hr width="300px", color="black">
+        <h1 id="nivellAvançat">NIVELL AVANÇAT</h1>
+        <hr width="300px", color="black"> <!-- crea una línia de color negra de 300px d'amplada -->
+        <br>
+        <table id="imatgeMental">
+            <tr> <!-- crea una fila, en aquest cas la primera de la taula -->
+                <th id="instruccions1">Observa el següent mot i mira de recordar-ne els detalls fent-ne una fotografia mental: 
+                <br><div type="text" id="lighter">(No facis ús de la memòria auditiva, aquest joc és VISUAL)</div>
+                <br>
+                </th>
+            </tr>
+            <tr>
+                <td id="paraula"><h2 id="primeraLletra"></h2><h2 id="segonaLletra"></h2><h2 id="terceraLletra"></h2><h2 id="quartaLletra"></h2><h2 id="cinquenaLletra"></h2><h2 id="sisenaLletra"></h2><h2 id="setenaLletra"></h2><h2 id="vuitenaLletra"></h2></td>
+            </tr>
+            <tr>
+                <th id="instruccions2">Ara, prement el botó d'abaix, amaga-la!</th>
+            </tr>
+        </table>
+
+        <div id="botons"> <!-- amb l'etiqueta <div> s'agrupa el contingut, i serveix per aplicar una matixa acció sobre tot el que conté -->
+            <br>
+            <button type="button" id="refresca1" onclick="refresca()" title="fent DOBLE CLICK AQUÍ es recarregarà la pantalla de manera que tornaràs a començar.">REFRESCA</button>
+            <button type="button" id="amaga-la" onclick="mostrarOcultarText()">AMAGA-LA!</button>
+            <!-- "onclick" fa que en prèmer el botó, aquest executi el programa de JS -->
+            <br>
+        </div>
+        
+        <div id="colorsResposta">
+            <h2 id="instruccions3">Quins colors hi havia a la paraula?<br>
+            <div id="lighter">(escriu-los en ordre)</div></h2>
+            <br>
+            <h2><input type="color" id="primerColor" list="colors" value="#ffffff" required/>
+                <input type="color" id="segonColor" list="colors" value="#ffffff" required/>
+                <input type="color" id="tercerColor" list="colors" value="#ffffff" required/>
+                <input type="color" id="quartColor" list="colors" value="#ffffff"/>
+                <input type="color" id="cinquèColor" list="colors" value="#ffffff"/>
+                <input type="color" id="sisèColor" list="colors" value="#ffffff"/>
+                <input type="color" id="setèColor" list="colors" value="#ffffff"/>
+                <input type="color" id="vuitèColor" list="colors" value="#ffffff"/></h2>
+                
+                <datalist id="colors">
+                    <option value="#ff009f"></option>
+                    <option value="#9600ff"></option>
+                    <option value="#ffed00"></option>
+                    <option value="#87ff00"></option>
+                    <option value="#00abff"></option>
+                    <option value="#ffab00"></option>
+                    <option value="#000000"></option>
+                </datalist>
+            <br>
+            <button type="button" id="refresca2" onclick="refresca()" title="Si has oblidat la paraula o els colors, fes DOBLE CLICK AQUÍ i es recarregarà la pantalla de manera que tornaràs a començar.">REFRESCA</button>
+            <button type="button" id="envia1" title="Fes CLICK AQUÍ per comprovar la teva resposta" onclick="corregir()">ENVIA</button>
+            <br>
+            <h2 id="sol·lució1"></h2>
+            <button type="button" id="continua" title="Passa a la següent activitat" onclick="mostrarExercici()" style="display: none;">CONTINUA</button>
+        </div>
+
+        <table id="exercici">
+            <tr>
+                <th id="instruccions4">Quina era la paraula?, reescriu-la!</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="espaiPerALaParaula" placeholder="paraula" required/></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" id="refresca3" onclick="refresca()" title="Si has oblidat la paraula, fes DOBLE CLICK AQUÍ i es recarregarà la pantalla de manera que tornaràs a començar.">REFRESCA</button>
+                    <button type="button" id="envia2" onclick="corregeixLaParaula()" title="Fes CLICK AQUÍ per comprovar la teva resposta">ENVIA</button>
+                </td>
+            </tr>
+        </table>
+        
+        <h2 id="sol·lució2"></h2>
+        
+        <button type="button" id="torna" title="Torna a l'índex de nivells"><a href="2-inici.html">TORNA</a></button>
+        <button type="button" id="següent" title="Passa a la següent paraula"><a href="5-avançat.html">SEGÜENT</a></button>
+    </body>
+</html>

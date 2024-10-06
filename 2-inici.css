@@ -1,0 +1,71 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    background-color: #ffe7b7;
+}
+
+#title {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#torna {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    width: 150px;
+    height:75px;
+    border-radius: 30px;
+    border-width: 5px;
+    border-color: white;
+    background-color: #ffdd98;
+}
+
+#fàcil {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    width: 150px;
+    height:75px;
+    border-radius: 30px;
+    border-width: 5px;
+    border-color: white;
+    background-color: #ef9acf;
+}
+
+#mitjà {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    width: 150px;
+    height:75px;
+    border-radius: 30px;
+    border-width: 5px;
+    border-color: white;
+    background-color: #b8b5ff;
+}
+
+#avançat {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    width: 180px;
+    height:75px;
+    border-radius: 30px;
+    border-width: 5px;
+    border-color: white;
+    background-color: #c2f17e;
+}
+
+#expert {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    width: 165px;
+    height:75px;
+    border-radius: 30px;
+    border-width: 5px;
+    border-color: white;
+    background-color: #fff571;
+}
